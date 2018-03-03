@@ -1,10 +1,11 @@
 # CUHyperloop
-Anything that's not SolidWorks or EE
+Project repository for all things (open source) pertaining to CU Hyperloop.
+
+## Website
+Mebsite materials. Still uses stock images for now...
 
 
-## Pertinent information/links:
-
-
+## Random information/links:
 "Meet the Tiva series/getting started"
 http://www.ti.com/lit/ml/spmz858/spmz858.pdf
 
