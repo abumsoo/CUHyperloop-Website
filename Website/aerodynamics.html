@@ -44,7 +44,46 @@
   <div class="w3-container w3-padding-32" id="design">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Design</h3>
     <p>
-      Coming soon!
+      <h4>Shell Design</h4>
+      In order to make cooling electronics easier, the chosen operating
+      pressure within the tube was determined to be 10% atmosphere, or
+      approximately 1.5 psi. As the pod will be operating in some atmosphere,
+      an aerodynamic cover for the pod was required to reduce drag and protect
+      internals as well as future passengers.
+
+      Utilizing research done by <a href="http://web.mit.edu/mopg/www/papers/OpgenoordCaplan_2017_Aerodynamics_Hyperloop_online.pdf" title="On the Aerodynamic Design of the Hyperloop Concept" target="_blank">Opgenoord and Caplan from MIT</a> and analysis
+      conducted by <a href="http://azhyperloop.com/" title="AzLoop" target="_blank">AzLoop</a>, as well as internal simulation and analysis, the
+      team decided to choose a shell the resembled an airfoil. Aside from
+      producing less profile drag than a standard pill shaped pod, the airfoil
+      geometry generates a small amount of lift in the thin atmosphere,
+      resulting in a reduction in the effective weight of the pod. This reduces
+      wheel friction. A number of design iterations like the one's shown in
+      Fig. (1) were tested using Star-CCM+. Each model was simulated, areas of
+      high pressure and turbulence were identified, and optimizations were
+      performed to produce future iterations until the final design was chosen.
+
+      <div class="figure">
+        <img src="images/design/finalAero.png" alt="CU Hyperloop shell" style="width: 100%">
+        <p>Fig. 1: Design iterations to the final CU Hyperlop shell design</p>
+      </div>
+
+      The final design was simulated with a laminar model for aerodynamic
+      constants and a K-Epsilon model for thermal profiles with a turbulence
+      intensity of 0.01. The mesh, consisting of 578,000 cells, was tested at a
+      velocity of 90 m/s at 1.47 psi. This resulted in a C_L of 0.013 and a C_D
+      of 0.026. Flow velocity can be seen in Fig. (2). Anticipated lift and
+      drag were 23.86 N and 47 N, respectively.
+
+      <div class="figure">
+        <img src="images/design/aeroSim.png" alt="Shell simulation">
+        <p>Fig. 2: Flow velocity contour plot of the final shell design at nominal performance conditions</p>
+      </div>
+
+      Thermal analysis was also conducted on the shell. Because of the low tube
+      pressure, skin friction is low which resulted in shell temperature
+      increases of only 4 K. Additional shell testing needs to be conducted to
+      validate the aerodynamic models. Scale test models will be manufactured
+      over the summer of 2018 and tested in a wind tunnel.
     </p>
   </div>
 
