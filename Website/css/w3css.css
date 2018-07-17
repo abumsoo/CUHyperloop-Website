@@ -148,6 +148,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .faded-padding-large{padding:24px 48px!important;opacity:.9;-moz-box-shadow: 0px 0px 10px 30px rgba(97,97,97,.9);-webkit-box-shadow: 0px 0px 10px 30px rgba(97,97,97,.9);box-shadow: 0px 0px 10px 30px rgba(97,97,97,.9)}
 .image-blur{filter: blur(10px);-webkit-filter: blur(10px);-moz-filter: blur(10px);-o-filter: blur(10px);-ms-filter: blur(10px)}
 .image-blur-light{filter: blur(5px);-webkit-filter: blur(5px);-moz-filter: blur(5px);-o-filter: blur(5px);-ms-filter: blur(5px)}
+.figure{text-align: center;display: block;margin-left: auto;margin-right: auto;width:50%}
 /* Colors */
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
