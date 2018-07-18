@@ -44,7 +44,69 @@
   <div class="w3-container w3-padding-32" id="design">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Design</h3>
     <p>
-      Coming soon!
+      <h4>High Pressure Tanks</h4>
+      The pod's primary method of propulsion comes high pressure Nitrogen tanks
+      produced by Steelhead Composites. Originally designed for compressed
+      natural gas, these tanks can support pressures up to 3600 psi. Three of
+      these tanks would be pressurized to 3600 psi, providing a peak thrust of
+      2000 N per tank (6000 N total). A rendering can be seen in Fig. (1).
+      These tanks are relatively lightweight and have ports on both ends,
+      allowing for the nozzle hardware on one side and a fill manifold on other.
+
+      <div class="figure">
+        <img src="images/design/propOverview.jpg" alt="Tanks and nozzle cad" style="width: 100%">
+        <p>Fig. 1: CAD rendering of the 3 propulsion tanks and the nozzle hardware</p>
+      </div>
+
+      Nitrogen was chosen due to it's low cost and ease of accessibility. It's
+      non-volatile and can be purchased relatively pure, reducing the need for
+      additional filters. Additionally, since Earth's atmosphere is primarily
+      Nitrogen, it has scalability benefits for full scale systems.
+
+      Figure (2) shows the different parts of the thrust nozzle. The nozzle
+      piping is straight with exception of the high pressure electronic valve,
+      minimizing obstacles to the flow. The nozzle itself would be optimized
+      for near-vacuum expansion with yet-undetermined chamber pressure. Since
+      the chamber pressure is continuously decreasing as gas is expelled,
+      selecting a single pressure for optimization is difficult and having an
+      adjustable nozzle is overly-complex. Additional analysis is being
+      conducted to determine the best pressure to optimize at. For safety, a
+      manual in-line ball valve separates the electronic valve and the tank.
+      This allows for safe transport of the pod after the propellant is loaded,
+      yet prior to tube closeout. The final step in the pod loading procedure
+      would be to open the manual safety valve. Additionally, all nozzle parts
+      are certified to 6000 psi, yielding a factor of safety of 1.67.
+
+      <div class="figure">
+        <img src="images/design/nozzleOverview.jpg" alt="Nozzles" style="width: 100%">
+        <p>Fig. 2: 1. Brass fitting adapting from the tank outlet to the in-line safety valve</p>
+        <p>2. In-line ball valve acting as a manual safety</p>
+        <p>3. Brass fitting adapting the in-line safety valve to the electronic valve</p>
+        <p>4. ASCO electronic valve</p>
+        <p>5. Vacuum optimized nozzle</p>
+      </div>
+
+      <h4>Low Pressure Tank</h4>
+      A 4th, low pressure propellant tank is also stored on-board the pod. The
+      purpose of the low pressure tank is to actuate the propulsion valves
+      (item 4 in Fig. (2)) as well as actuate the pneumatic brakes.
+
+      <h4>Piping, Manifold, and Electronics</h4>
+      A single fill manifold allows tank pressures during propellant loading to
+      remain equal. A separate plumbing system would be used to fill the low
+      pressure tank for pneumatic control. Wherever possible, pipes would be
+      solid tubing rather than flexible, reducing variations in tube diameter
+      around corners and making management of internal systems less cluttered.
+
+      Synchronization of the three thrust valves is key to a successful test.
+      If the valves open asynchronously, imbalanced thrust could torque the
+      vehicle off of the center rail. With the chosen electronic valves, the
+      maximum time to open is 0.08 seconds, and the maximum software delay to
+      each valve is capped at 20 nanoseconds. Additionally, all of the piping
+      coming from each propulsion tank is of equal length, lending a further
+      physical mechanism to syncronyze the thrust. Given this, we anticipate no
+      problem with imbalanced thrust at the start of the thrust phase.
+      Additional research and testing needs to be conducted to confirm this.
     </p>
   </div>
 
