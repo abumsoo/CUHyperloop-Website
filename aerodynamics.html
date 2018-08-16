@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>CU Hyperloop - Aerodynamics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3css.css">
+<head><link rel="shortcut icon" type="image/x-icon" href="images/titleLogo.ico" /></head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>CU</b> Hyperloop</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#overview" class="w3-bar-item w3-button">Overview</a>
+      <a href="#design" class="w3-bar-item w3-button">Design</a>
+      <a href="#analysis" class="w3-bar-item w3-button">Analysis</a>
+      <a href="#top" class="w3-bar-item w3-button">Top</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="top">
+  <img class="w3-image image-blur" src="images/aeroHeader.png" alt="Aerodynamic intro header" width="1910" height="706">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-jumbo w3-text-white"><span class="w3-padding text-gold w3-black w3-opacity-min"><b>CU Hyperloop</b></span> <span class="w3-hide-small w3-text-black">Aerodynamics</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Overview -->
+  <div class="w3-container w3-padding-32" id="overview">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Overview</h3>
+    <p>
+      Coming soon!
+    </p>
+  </div>
+
+  <!-- Design -->
+  <div class="w3-container w3-padding-32" id="design">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Design</h3>
+    <p>
+      <h4>Shell Design</h4>
+      In order to make cooling electronics easier, the chosen operating
+      pressure within the tube was determined to be 10% atmosphere, or
+      approximately 1.5 psi. As the pod will be operating in some atmosphere,
+      an aerodynamic cover for the pod was required to reduce drag and protect
+      internals as well as future passengers.
+
+      Utilizing research done by <a href="http://web.mit.edu/mopg/www/papers/OpgenoordCaplan_2017_Aerodynamics_Hyperloop_online.pdf" title="On the Aerodynamic Design of the Hyperloop Concept" target="_blank">Opgenoord and Caplan from MIT</a> and analysis
+      conducted by <a href="http://azhyperloop.com/" title="AzLoop" target="_blank">AzLoop</a>, as well as internal simulation and analysis, the
+      team decided to choose a shell the resembled an airfoil. Aside from
+      producing less profile drag than a standard pill shaped pod, the airfoil
+      geometry generates a small amount of lift in the thin atmosphere,
+      resulting in a reduction in the effective weight of the pod. This reduces
+      wheel friction. A number of design iterations like the one's shown in
+      Fig. (1) were tested using Star-CCM+. Each model was simulated, areas of
+      high pressure and turbulence were identified, and optimizations were
+      performed to produce future iterations until the final design was chosen.
+
+      <div class="figure">
+        <img src="images/design/finalAero.png" alt="CU Hyperloop shell" style="width: 100%">
+        <p>Fig. 1: Design iterations to the final CU Hyperlop shell design</p>
+      </div>
+
+      The final design was simulated with a laminar model for aerodynamic
+      constants and a K-Epsilon model for thermal profiles with a turbulence
+      intensity of 0.01. The mesh, consisting of 578,000 cells, was tested at a
+      velocity of 90 m/s at 1.47 psi. This resulted in a C_L of 0.013 and a C_D
+      of 0.026. Flow velocity can be seen in Fig. (2). Anticipated lift and
+      drag were 23.86 N and 47 N, respectively.
+
+      <div class="figure">
+        <img src="images/design/aeroSim.png" alt="Shell simulation">
+        <p>Fig. 2: Flow velocity contour plot of the final shell design at nominal performance conditions</p>
+      </div>
+
+      Thermal analysis was also conducted on the shell. Because of the low tube
+      pressure, skin friction is low which resulted in shell temperature
+      increases of only 4 K. Additional shell testing needs to be conducted to
+      validate the aerodynamic models. Scale test models will be manufactured
+      over the summer of 2018 and tested in a wind tunnel.
+    </p>
+  </div>
+
+  <!-- Analysis -->
+  <div class="w3-container w3-padding-32" id="analysis">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Analysis</h3>
+    <p>
+      Coming soon!
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>CU Hyperloop &#169; 2018</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>

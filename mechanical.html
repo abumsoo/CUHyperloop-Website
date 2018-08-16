@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>CU Hyperloop - Mechanical</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3css.css">
+<head><link rel="shortcut icon" type="image/x-icon" href="images/titleLogo.ico" /></head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>CU</b> Hyperloop</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#overview" class="w3-bar-item w3-button">Overview</a>
+      <a href="#analysis" class="w3-bar-item w3-button">Design</a>
+      <a href="#analysis" class="w3-bar-item w3-button">Analysis</a>
+      <a href="#top" class="w3-bar-item w3-button">Top</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="top">
+  <img class="w3-image image-blur" src="images/mechHeader.png" alt="Mechanical intro header" width="1568" height="727">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-jumbo w3-text-white"><span class="w3-padding text-gold w3-black w3-opacity-min"><b>CU Hyperloop</b></span> <span class="w3-hide-small w3-text-black">Mechanical</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Overview -->
+  <div class="w3-container w3-padding-32" id="overview">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Overview</h3>
+    <p>
+      Coming soon!
+    </p>
+  </div>
+
+  <!-- Design -->
+  <div class="w3-container w3-padding-32" id="design">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Design</h3>
+    <p>
+      <h4>Frame and Structure</h4>
+      The frame is designed to provide a platform for all components of the
+      hyperloop pod. In order to remain modular, 80/20 Aluminum extrusion was
+      used for the majority of the structure. In order to maintain stiffness,
+      joints would be welded rather than fastened with traditional fasteners,
+      as seen in Fig. (1). This provides for a strong, stiff
+      frame, and mounting interfaces would be slotted into the 80/20 rails so
+      they could be repositioned or removed at a later date.
+
+      <div class="figure">
+        <img src="images/design/weldLoc.png" alt="Welding locations on the pod frame">
+        <p>Fig. 1: Locations of welds on the frame</p>
+      </div>
+
+      In addition to supporting the critical hyperloop systems, the pod is able
+      to support a single, average sized human passenger. No life support
+      systems are included, and due to the nature of our design and the scale
+      of the test track, the ride for the passenger would likely be very
+      uncomfortable (see Sections V.3.A and V.C of the <a href="http://cuhyperloop.com/TechRep2018.pdf" title="CU Hyperloop 2018 Technical Report" target="_blank">2018 Technical Report</a>).
+
+      <h4>Attitude Control</h4>
+      In order to remain upright and in line with the hyperloop test track, a
+      tricycle wheel configuration was used for the ground interface and
+      clamping stability wheels are used on the rail, as shown in Fig. (2). The
+      main, weight bearing wheels were to be made of liquid-cast polyurethane
+      around an aluminum cylinder. The tricycle configuration limited rotation
+      along the roll axis and additionally limited the maximum translation if
+      any of the stability wheels failed (the main tricycle wheels would be
+      unable to jump the central rail in the test track).
+
+      <div class="figure">
+        <img src="images/design/attitudeControl.png" alt="The attitude control system" style="width: 100%">
+        <p>Fig. 2: Locations of the attitude control assemblies</p>
+      </div>
+
+      Suspension aligned in the forward, downward facing direction
+      (see Fig. (3)) allowed the pod to skip over any track variances with
+      ease. Additionally, the use of springs meant that there wouldn't be any
+      compressed fluids or gases to worry about.
+
+      <div class="figure">
+        <img src="images/design/suspension.png" alt="The pod suspension">
+        <p>Fig. 3: Stability wheel configuration</p>
+      </div>
+
+      Figure (5) shows the configuration of the alignment wheels on the central
+      track rail. These wheels are wider than the suspension stroke of the pod,
+      meaning that even in full compression, the stability wheel will remain
+      clamped on the rail.
+
+      <div class="figure">
+        <img src="images/design/stabilityWheels.png" alt="The stability wheels">
+        <p>Fig. 4: Detail view of the stability wheels around the track rail</p>
+      </div>
+
+      <h4>Brakes</h4>
+      Brakes which clamped onto the center rail were used to bring the pod to a
+      stop after the test, as seen in Fig. (5) and (6). The brake pad was
+      designed to be as large as possible in order to create the most friction
+      and made of a yet-to-be-determined polymer so that it was softer than the
+      central rail. The electronic linear actuators are able to output 4450N of
+      dynamic force and 6000N of static force, with variable amounts being
+      applied over time to allow for gradual, controlled decelerations.
+
+      <div class="figure">
+        <img src="images/design/brakesOverview.png" alt="Overview of the brakes">
+        <p>Fig. 5: Detail view of the stability wheels around the track rail</p>
+
+        <img src="images/design/brakesClamp.png" alt="Brake states" style="width:100%">
+        <p>Fig. 6: Diagram showing the different states of the brakes</p>
+      </div>
+
+      For redundancy, the pod has two electric brakes and an additional 2
+      pneumatic brakes, as shown in Fig. (7). When pressurized, the pneumatic
+      actuators are able to clamp with 4670N of force, and automatically close
+      if pod power is lost.
+
+      <br />
+      <div class="figure">
+        <img src="images/design/redundantBrakes.png" alt="Braking redundancy">
+        <p>Fig. 7: Overview of the braking mechanism compartment showing both types of braking actuators</p>
+      </div>
+
+    </p>
+  </div>
+
+  <!-- Analysis -->
+  <div class="w3-container w3-padding-32" id="analysis">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Analysis</h3>
+    <p>
+      Coming soon!
+    </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>CU Hyperloop &#169; 2018</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
